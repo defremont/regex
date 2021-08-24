@@ -6,7 +6,7 @@ function validateDateTimes() {
     let invalidData = ["99/99/9999 3:9:9", "9/9/99 99:99:99"]
     data = data.concat(invalidData);
     console.log("Data:" + data);
-    var regex = /[0-9]+[0-9]+\/[0-9]+[0-9]+\/[0-9]+[0-9]+[0-9]+[0-9]+ [0-9]+[0-9]+:[0-9]+[0-9]+:[0-9]+[0-9]+/;
+    var regex = /[0-9]+[0-9]+\/[0-9]+[0-9]+\/[0-9]+[0-9]+[0-9]+[0-9]+\s[0-9]+[0-9]+:[0-9]+[0-9]+:[0-9]+[0-9]+/;
     data.forEach(d => {
         return console.log(regex.test(d) + " " + d);
     });
