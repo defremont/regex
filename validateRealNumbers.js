@@ -5,7 +5,7 @@ function validateRealNumbers() {
     let invalidData = ["1.", ".2", "+64,2"]
     data = data.concat(invalidData);
     console.log("Data:" + data);
-    var regex = /(^[-+]?[0-9]+\.[0-9]+$)|^[-+]?[0-9]+$/;
+    var regex = /(^[-+]?[0-9]+\.[0-9]+)|^[-+]?[0-9]+$/;
     data.forEach(d => {
         return console.log(regex.test(d) + " " + d);
     });
